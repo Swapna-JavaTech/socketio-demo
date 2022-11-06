@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebSockets Example</title>
+        <!-- ADD Socket IO CDN(Content Delivery Network)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.js" integrity="sha512-iWPnCISAd/J+ZacwV2mbNLCaPGRrRo5OS81lKTVPtRg1wGTC20Cfmp5Us5RcbLv42QLdbAWl0MI57yox5VecQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Welcome to my chat Application</h1>
+        <!-- chat window -->
+        <div id="chatio">
+            <h2>Bharat Chat</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Handle" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+        </div>
+        <!-- when we get the index.html file served in the browser
+        its gonna load the chat.js file in it 
+        it will run the chat.js -->
+        <script src="chat.js"></script>
+    </body>
+</html>
